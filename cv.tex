@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{xcolor}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{selinput}
+\SelectInputMappings{%
+  adieresis={ä},
+  eacute={é},
+  Lcaron={?},
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Ebram} % Your first name
+\familyname{Sherif} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Résumé}
+\address{153 El Nozha Street}{Helipolis, Cairo}
+\mobile{01228218838}
+\phone{0226344940}
+
+\email{ebram.sherif@gmail.com}
+ % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{2016}{Bachelor Thesis}{University of Rostock}{Germany}{\textit{Final Grade A+}}{Topic: Dynamic Context Aware Communication Channels in E-Learning}
+\cventry{2012--Present}{Bachelor in Computer Science and Engineering}{Germany University in Cairo}{Egypt}{\textit{GPA: 1.77 (Very Good)}}{Ranked 9th in Semester 6}  % Arguments not required can be left empty
+\cventry{2009--2012}{IGCSE}{Saint Fatima British School}{Egypt}{\textit{Final Score: 99\%}}{Maths and Physics as Advanced Level \newline IT, Physcis, Accounting and Arabic as electives}  % Arguments not required can be left empty
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\cventry{March--May 2016}{Full Stack Developer}{\textsc{University of Rostock}}{}{}{Implementing a context-aware chat feature as an extension for MediaWiki framework using PHP, jQuery, AJAX, HTML5 and CSS3.}
+\cventry{July-August 2015}{Backend developer}{\textsc{Unplugged Web Agency}}{}{}{Designing a career path simulation game website using Laravel.} 
+
+
+\cventry{September 2014--Januray 2016}{Junior Teaching Assistant}{\textsc{German University in Cairo}}{}{}{Teaching course's JAVA and Python labs}
+
+\cventry{November 2013--September 2014}{Backend Developer}{\textsc{Enactus GUC}}{}{}{Develop a webstore feature to the organization's website}
+
+
+%----------------------------------------------------------------------------------------
+%	Programming SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Techinical Skills}
+
+\cvitem{Web}{Ruby on Rails - PHP(Laravel, MediaWiki) - JavaScript(jQuery, AJAX) - HTML5 - CSS3}
+\cvitem{General Purpose}{Java, C, C++, Python}
+\cvitem{Databases}{MySQL, SQLite, Postgress}
+\cvitem{Others}{Git, Matlab, Prolog, Haskell, Microsoft Office}
+
+%----------------------------------------------------------------------------------------
+%	Extracurricular Activities SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Extracurricular Activities}
+
+\cventry{August 2016}{Logistics Team Member}{\textsc{AIESEC 68th International Congress}}{Warsaw, Poland}{}{AIESEC's biggest annual conference with 800+ delegates and keynote speakers from multinational corporates like Apple, Google and DHL.}
+\cventry{June--August 2014}{Team Leader}{\textsc{Most Camp}}{Krasondar, Russia}{}{Leading a team of teen delegates and delievering cultural awarness sessions}
+%\cventry{August 2016}{Logistics Team Member}{\textsc{AIESEC 68th International Congress}}{}{Providing necessary logistics for the conference}
+\cventry{September 2014--Current}{Various Experiences}{\textsc{AIESEC GUC}}{Cairo, Egypt}{}{\begin{itemize}
+\item{Organizing Committe President for Marketing Booth}
+\item{Best Marketing Team Leader Winter 2015}
+\item{Vice President for Finance in a conference organizing team}
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Arabic}{Mothertongue}{}
+\cvitemwithcomment{English}{Fluent in reading, speaking and writting}{}
+\cvitemwithcomment{German}{Intermediate in reading, speaking and writting}{}
+\cvitemwithcomment{French}{Intermediate in reading, speaking and writting}{}
+
+
+\end{document}
